@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-grey-9: #212529;
+  --color-grey-8: #343a40;
+  --color-grey-7: #495057;
+  --color-grey-6: #868e96;
+  --color-grey-5: #adb5bd;
+
+  --color-white-1: rgb(255, 255, 255);
+  --color-white-2: rgb(247, 247, 247);
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+
+}
+
+.page-layout {
+  margin: 0 3rem;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+header {
+  grid-area: header;
+  background-color: aqua;
+}
+
+main {
+  grid-area: main;
+  background-color: antiquewhite;
+}
+
+footer {
+  grid-area: footer;
+  background: lightblue;
+}
